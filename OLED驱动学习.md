@@ -33,7 +33,11 @@
 
 > ## 代码编写部分
 
-分为两种。第一种不使用缓存区，直接改变GDDRAM，但也不能跨Page操作。第二种使用缓存区和占用一部分RAMkon
+分为两种。第一种不使用缓存区，直接改变GDDRAM，但也不能跨Page操作。第二种使用缓存区和占用一部分RAM空间，换来自定义的刷新和显示。
+
+## 直接写入GDDRAM
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzOTI3ODU1MywyMDkxMDAyOTY4XX0=
+eyJoaXN0b3J5IjpbNjYxOTA4MjQwLDIwOTEwMDI5NjhdfQ==
 -->
