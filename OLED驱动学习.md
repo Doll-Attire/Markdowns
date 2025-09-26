@@ -39,8 +39,9 @@
 
 ## 直接写入GDDRAM
 
+这里需要涉及到软件I2C的驱动,参考[[10-3] 软件I2C读写MPU6050_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1th411z7sn?spm_id_from=333.788.videopod.episodes&vd_source=740e28c14abb598f1fe8be2d12484cbb&p=33)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTAyODU0NjcsMjI3MDQ0NTQ3LDY2MT
-kwODI0MCwyMDkxMDAyOTY4XX0=
+eyJoaXN0b3J5IjpbLTY3MzAzMDM5MSwtMTQ1MDI4NTQ2NywyMj
+cwNDQ1NDcsNjYxOTA4MjQwLDIwOTEwMDI5NjhdfQ==
 -->
