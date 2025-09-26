@@ -30,6 +30,10 @@
 ``10~1f，和上面这个配合使用，设置高位，防止命令重合``
 ``B0~B7，1011 0xxx，设置页地址0_to_7``
 这时候就有人说了哎哟我怎么这么多命令，上电得写死过去。还好搞硬件就是得会抄，可以参照手册配置发挥一下开源技术。
+
+> ## 代码编写部分
+
+分为两种。第一种不使用缓存区，直接改变GDDRAM，但也不能跨Page操作。第二种使用缓存区和占用一部分RAMkon
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MTAwMjk2OF19
+eyJoaXN0b3J5IjpbMTMzOTI3ODU1MywyMDkxMDAyOTY4XX0=
 -->
