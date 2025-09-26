@@ -18,7 +18,7 @@
 
 基础的略过。起始条件，终止条件，发送|接受数据，发送|接受应答--六大时序单元。在之前我们提到过，这分别是7位从设备地址+1位R/W#读写位，然后加上一个ACK信号，随即是8位寄存器地址，然后ACK。CO置1，可以连续发送命令+数据的组合，反之，只接受一次命令，随后连续接受数据
 
-具体步骤是，起始之后SCL在低电平，主机在SCL低电平时，允许改变SDA的电平，随后主机松手SCL，使其回弹高电平，从机需要再此时迅速读取SDA，不断重复这个过程8次，传输的数据高位先行。（区别串口低位先行）此外，由于时钟线的存在，哪怕主机传输一半去处理中断了，SCL和SDA都会因此停止，时序不断拉长等他回来。读取时反之，SCL高电平期间主机读取SDA上的数据	。
+具体步骤是，起始之后SCL在低电平，主机在SCL低电平时，允许改变SDA的电平，随后主机松手SCL，使其回弹高电平，从机需要再此时迅速读取SDA，不断重复这个过程8次，传输的数据高位先行。（区别串口低位先行）此外，由于时钟线的存在，哪怕主机传输一半去处理中断了，SCL和SDA都会因此停止，时序不断拉长等他回来。读取时反之，SCL高电平期间主机读取SDA上的数据	。因此当SCL高电平时只要胆敢修改SDA，则就是对应的起始与终止条件。
 
 > OLED的设置
 > 
@@ -42,6 +42,7 @@
 这里需要涉及到软件I2C的驱动,参考[[10-3] 软件I2C读写MPU6050_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1th411z7sn?spm_id_from=333.788.videopod.episodes&vd_source=740e28c14abb598f1fe8be2d12484cbb&p=33)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MzAzMDM5MSwtMTQ1MDI4NTQ2NywyMj
-cwNDQ1NDcsNjYxOTA4MjQwLDIwOTEwMDI5NjhdfQ==
+eyJoaXN0b3J5IjpbMTYxMDU2MTcxOSwtNjczMDMwMzkxLC0xND
+UwMjg1NDY3LDIyNzA0NDU0Nyw2NjE5MDgyNDAsMjA5MTAwMjk2
+OF19
 -->
