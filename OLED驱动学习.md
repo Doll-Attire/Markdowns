@@ -22,97 +22,41 @@
 
 实验中使用了软件I2C模拟，这里给出时序图与核心代码可供参考：[301650f4d15e24b923cee8029682d1a5.png (1488×555)](https://i-blog.csdnimg.cn/blog_migrate/301650f4d15e24b923cee8029682d1a5.png)
 ```c
-#include "stm32f10x.h"                  // Device header
-#include "Delay.h"
-
-void MyI2C_W_SCL(uint8_t BitValue)
-{
-	GPIO_WriteBit(GPIOB, GPIO_Pin_10, (BitAction)BitValue);
-	Delay_us(10);
-}
-
-void MyI2C_W_SDA(uint8_t BitValue)
-{
-	GPIO_WriteBit(GPIOB, GPIO_Pin_11, (BitAction)BitValue);
-	Delay_us(10);
-}
-
-uint8_t MyI2C_R_SDA(void)
-{
-	uint8_t BitValue;
-	BitValue = GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_11);
-	Delay_us(10);
-	return BitValue;
-}
 
 void MyI2C_Init(void)
 {
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
-	
-	GPIO_InitTypeDef GPIO_InitStructure;
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_OD;
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10 | GPIO_Pin_11;
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-	GPIO_Init(GPIOB, &GPIO_InitStructure);
-	
-	GPIO_SetBits(GPIOB, GPIO_Pin_10 | GPIO_Pin_11);
+    // 使能GPIOB时钟
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+    
+    // 配置GPIO参数
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_OD;  // 开漏输出模式，适合I2C
+    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10 | GPIO_Pin_11;  // PB10=SCL, PB11=SDA
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStructure);
+    
+    // 初始状态设置为高电平（I2C空闲时SCL和SDA都为高）
+    GPIO_SetBits(GPIOB, GPIO_Pin_10 | GPIO_Pin_11);
 }
+
+
 
 void MyI2C_Start(void)
 {
-	MyI2C_W_SDA(1);
-	MyI2C_W_SCL(1);
-	MyI2C_W_SDA(0);
-	MyI2C_W_SCL(0);
+    MyI2C_W_SDA(1);  // SDA先置高
+    MyI2C_W_SCL(1);  // SCL置高，此时总线处于空闲状态
+    MyI2C_W_SDA(0);  // 在SCL高电平时，SDA从高到低跳变，产生起始信号
+    MyI2C_W_SCL(0);  // SCL置低，准备发送数据
 }
+
 
 void MyI2C_Stop(void)
 {
-	MyI2C_W_SDA(0);
-	MyI2C_W_SCL(1);
-	MyI2C_W_SDA(1);
+    MyI2C_W_SDA(0);  // SDA先置低
+    MyI2C_W_SCL(1);  // SCL置高
+    MyI2C_W_SDA(1);  // 在SCL高电平时，SDA从低到高跳变，产生停止信号
 }
 
-void MyI2C_SendByte(uint8_t Byte)
-{
-	uint8_t i;
-	for (i = 0; i < 8; i ++)
-	{
-		MyI2C_W_SDA(!!(Byte & (0x80 >> i)));
-		MyI2C_W_SCL(1);
-		MyI2C_W_SCL(0);
-	}
-}
-
-uint8_t MyI2C_ReceiveByte(void)
-{
-	uint8_t i, Byte = 0x00;
-	MyI2C_W_SDA(1);
-	for (i = 0; i < 8; i ++)
-	{
-		MyI2C_W_SCL(1);
-		if (MyI2C_R_SDA()){Byte |= (0x80 >> i);}
-		MyI2C_W_SCL(0);
-	}
-	return Byte;
-}
-
-void MyI2C_SendAck(uint8_t AckBit)
-{
-	MyI2C_W_SDA(AckBit);
-	MyI2C_W_SCL(1);
-	MyI2C_W_SCL(0);
-}
-
-uint8_t MyI2C_ReceiveAck(void)
-{
-	uint8_t AckBit;
-	MyI2C_W_SDA(1);
-	MyI2C_W_SCL(1);
-	AckBit = MyI2C_R_SDA();
-	MyI2C_W_SCL(0);
-	return AckBit;
-}
 
 ```
 
@@ -138,7 +82,7 @@ uint8_t MyI2C_ReceiveAck(void)
 这里需要涉及到软件I2C的驱动,参考[[10-3] 软件I2C读写MPU6050_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1th411z7sn?spm_id_from=333.788.videopod.episodes&vd_source=740e28c14abb598f1fe8be2d12484cbb&p=33)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODMxMzYxMiwxNjEwNTYxNzE5LC02Nz
+eyJoaXN0b3J5IjpbMTIxNTk1NjE3NCwxNjEwNTYxNzE5LC02Nz
 MwMzAzOTEsLTE0NTAyODU0NjcsMjI3MDQ0NTQ3LDY2MTkwODI0
 MCwyMDkxMDAyOTY4XX0=
 -->
