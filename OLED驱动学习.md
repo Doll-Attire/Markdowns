@@ -20,6 +20,102 @@
 
 具体步骤是，起始之后SCL在低电平，主机在SCL低电平时，允许改变SDA的电平，随后主机松手SCL，使其回弹高电平，从机需要再此时迅速读取SDA，不断重复这个过程8次，传输的数据高位先行。（区别串口低位先行）此外，由于时钟线的存在，哪怕主机传输一半去处理中断了，SCL和SDA都会因此停止，时序不断拉长等他回来。读取时反之，SCL高电平期间主机读取SDA上的数据	。因此当SCL高电平时只要胆敢修改SDA，则就是对应的起始与终止条件。
 
+实验中使用了软件I2C模拟，这里给出时序图与核心代码可供参考：[301650f4d15e24b923cee8029682d1a5.png (1488×555)](https://i-blog.csdnimg.cn/blog_migrate/301650f4d15e24b923cee8029682d1a5.png)
+```c
+#include "stm32f10x.h"                  // Device header
+#include "Delay.h"
+
+void MyI2C_W_SCL(uint8_t BitValue)
+{
+	GPIO_WriteBit(GPIOB, GPIO_Pin_10, (BitAction)BitValue);
+	Delay_us(10);
+}
+
+void MyI2C_W_SDA(uint8_t BitValue)
+{
+	GPIO_WriteBit(GPIOB, GPIO_Pin_11, (BitAction)BitValue);
+	Delay_us(10);
+}
+
+uint8_t MyI2C_R_SDA(void)
+{
+	uint8_t BitValue;
+	BitValue = GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_11);
+	Delay_us(10);
+	return BitValue;
+}
+
+void MyI2C_Init(void)
+{
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+	
+	GPIO_InitTypeDef GPIO_InitStructure;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_OD;
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10 | GPIO_Pin_11;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_Init(GPIOB, &GPIO_InitStructure);
+	
+	GPIO_SetBits(GPIOB, GPIO_Pin_10 | GPIO_Pin_11);
+}
+
+void MyI2C_Start(void)
+{
+	MyI2C_W_SDA(1);
+	MyI2C_W_SCL(1);
+	MyI2C_W_SDA(0);
+	MyI2C_W_SCL(0);
+}
+
+void MyI2C_Stop(void)
+{
+	MyI2C_W_SDA(0);
+	MyI2C_W_SCL(1);
+	MyI2C_W_SDA(1);
+}
+
+void MyI2C_SendByte(uint8_t Byte)
+{
+	uint8_t i;
+	for (i = 0; i < 8; i ++)
+	{
+		MyI2C_W_SDA(!!(Byte & (0x80 >> i)));
+		MyI2C_W_SCL(1);
+		MyI2C_W_SCL(0);
+	}
+}
+
+uint8_t MyI2C_ReceiveByte(void)
+{
+	uint8_t i, Byte = 0x00;
+	MyI2C_W_SDA(1);
+	for (i = 0; i < 8; i ++)
+	{
+		MyI2C_W_SCL(1);
+		if (MyI2C_R_SDA()){Byte |= (0x80 >> i);}
+		MyI2C_W_SCL(0);
+	}
+	return Byte;
+}
+
+void MyI2C_SendAck(uint8_t AckBit)
+{
+	MyI2C_W_SDA(AckBit);
+	MyI2C_W_SCL(1);
+	MyI2C_W_SCL(0);
+}
+
+uint8_t MyI2C_ReceiveAck(void)
+{
+	uint8_t AckBit;
+	MyI2C_W_SDA(1);
+	MyI2C_W_SCL(1);
+	AckBit = MyI2C_R_SDA();
+	MyI2C_W_SCL(0);
+	return AckBit;
+}
+
+```
+
 > OLED的设置
 > 
 本次操作使用的128*8Byte的显示屏，在纵向上的y轴自然也分为了8个一Byte长的“页Page”，顾名思义横向x轴有128bit。我们定义左上角为原点。展开后高位在y轴下方，例如写入0x55，则下到上为``0101 0101``。每次写完一位,内部地址指针自动右移一个单位。写到127行后，默认返回设定Page横轴的开头。可以配置寻址模式来实现自动到下一Page。但是你会发现，如果想要实现Y轴任意指定，会涉及到跨Page的情况，需要并行模式下读取GDDRAM的能力，串行模式下，需要缓存数组来中转最后一起写入，这里暂时不表。
@@ -42,7 +138,7 @@
 这里需要涉及到软件I2C的驱动,参考[[10-3] 软件I2C读写MPU6050_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1th411z7sn?spm_id_from=333.788.videopod.episodes&vd_source=740e28c14abb598f1fe8be2d12484cbb&p=33)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMDU2MTcxOSwtNjczMDMwMzkxLC0xND
-UwMjg1NDY3LDIyNzA0NDU0Nyw2NjE5MDgyNDAsMjA5MTAwMjk2
-OF19
+eyJoaXN0b3J5IjpbMTAxODMxMzYxMiwxNjEwNTYxNzE5LC02Nz
+MwMzAzOTEsLTE0NTAyODU0NjcsMjI3MDQ0NTQ3LDY2MTkwODI0
+MCwyMDkxMDAyOTY4XX0=
 -->
