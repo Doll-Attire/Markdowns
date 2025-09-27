@@ -58,6 +58,35 @@ void MyI2C_Stop(void)
 }
 
 
+void MyI2C_SendByte(uint8_t Byte)
+{
+    uint8_t i;
+    for (i = 0; i < 8; i ++)
+    {
+        // 从高位到低位依次发送（I2C规定先传最高位）
+        MyI2C_W_SDA(!!(Byte & (0x80 >> i)));
+        MyI2C_W_SCL(1);  // SCL高电平期间，数据有效
+        MyI2C_W_SCL(0);  // SCL低电平期间，准备下一位数据
+    }
+}
+
+
+uint8_t MyI2C_ReceiveByte(void)
+{
+    uint8_t i, Byte = 0x00;
+    MyI2C_W_SDA(1);  // 释放SDA总线，由从机控制
+    for (i = 0; i < 8; i ++)
+    {
+        MyI2C_W_SCL(1);  // SCL高电平，读取数据
+        if (MyI2C_R_SDA()){Byte |= (0x80 >> i);}  // 读取当前位并保存
+        MyI2C_W_SCL(0);  // SCL低电平，从机准备下一位
+    }
+    return Byte;
+}
+
+
+
+
 ```
 
 > OLED的设置
@@ -82,7 +111,7 @@ void MyI2C_Stop(void)
 这里需要涉及到软件I2C的驱动,参考[[10-3] 软件I2C读写MPU6050_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1th411z7sn?spm_id_from=333.788.videopod.episodes&vd_source=740e28c14abb598f1fe8be2d12484cbb&p=33)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNTk1NjE3NCwxNjEwNTYxNzE5LC02Nz
-MwMzAzOTEsLTE0NTAyODU0NjcsMjI3MDQ0NTQ3LDY2MTkwODI0
-MCwyMDkxMDAyOTY4XX0=
+eyJoaXN0b3J5IjpbMjk1NjQwMzk5LDE2MTA1NjE3MTksLTY3Mz
+AzMDM5MSwtMTQ1MDI4NTQ2NywyMjcwNDQ1NDcsNjYxOTA4MjQw
+LDIwOTEwMDI5NjhdfQ==
 -->
