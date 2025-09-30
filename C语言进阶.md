@@ -34,10 +34,15 @@ double	8
 
 ## 整形在内存中的存储
 
-正数的二进制标售yo
+正数的二进制标售有三种
+1. 正数的三者相同
+2. 负数的三者需要计算
 
+- 原码 : 直接写出的二进制序列
+- 反码 : 符号位不变 , 其他按位取反
+- 补码 : 反码+1
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNTM3OTk1MSwtMjEyMTM2Njg4NF19
+eyJoaXN0b3J5IjpbLTY5Nzc3MzgzMCwtMjEyMTM2Njg4NF19
 -->
