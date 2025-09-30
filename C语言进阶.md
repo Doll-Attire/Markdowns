@@ -34,10 +34,10 @@ double	8
 
 ## 整形在内存中的存储
 
-
+正数的二进制标售yo
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjEzNjY4ODRdfQ==
+eyJoaXN0b3J5IjpbMTgzNTM3OTk1MSwtMjEyMTM2Njg4NF19
 -->
