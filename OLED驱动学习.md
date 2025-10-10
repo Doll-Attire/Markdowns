@@ -151,7 +151,7 @@ if (pChinese >= 3)
 			strcmp(OLED_CF16X16[pIndex]->Index , "") != 0 ;
 			 pIndex ++ )
 			 {
-				if (strcmp(OLED_CF16X16[pIndex]->Index , SigleChinese) == 0 )
+				if (strcmp(OLED_CF16X16[pIndex].Index , SigleChinese) == 0 )
 			{break;}
 			  }
 ////上面这里我们首先在字模结构体的最下方定义一个""空字符作为没找到结果的默认返回值，
@@ -164,7 +164,7 @@ OLED_ShowImage
  Page , 
  16 ,
  2 ,
- OLED_CF16X16[pIndex] -> Data
+ OLED_CF16X16[pIndex].Data
  )
 
 
@@ -174,8 +174,8 @@ OLED_ShowImage
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNzgxNzY5NywtODg4NDYxMjYzLDExNj
-E2NjQ4NTMsMjk1NjQwMzk5LDE2MTA1NjE3MTksLTY3MzAzMDM5
-MSwtMTQ1MDI4NTQ2NywyMjcwNDQ1NDcsNjYxOTA4MjQwLDIwOT
-EwMDI5NjhdfQ==
+eyJoaXN0b3J5IjpbMTA4NTE0Mjc1NSwxNjI3ODE3Njk3LC04OD
+g0NjEyNjMsMTE2MTY2NDg1MywyOTU2NDAzOTksMTYxMDU2MTcx
+OSwtNjczMDMwMzkxLC0xNDUwMjg1NDY3LDIyNzA0NDU0Nyw2Nj
+E5MDgyNDAsMjA5MTAwMjk2OF19
 -->
