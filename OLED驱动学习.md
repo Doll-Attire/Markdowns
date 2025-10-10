@@ -156,7 +156,14 @@ if (pChinese >= 3)
 			  }
 ////上面这里我们首先在字模结构体的最下方定义一个""空字符作为没找到结果的默认返回值，然后从输入数据的Chinese数组里面遍历至结束符，将其中的每一位都写入SigleChinese中
 		
-OLED_ShowImage(X + ((i+1)
+OLED_ShowImage
+(
+ X + ((i+1)/3 - 1) * 16 ,
+ Page , 
+ 16 ,
+ 2 ,
+ OLED_CF16X16[pIndex] -> Data
+ )
 
 
 		}
@@ -165,8 +172,8 @@ OLED_ShowImage(X + ((i+1)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE1OTExMjk3LC04ODg0NjEyNjMsMTE2MT
-Y2NDg1MywyOTU2NDAzOTksMTYxMDU2MTcxOSwtNjczMDMwMzkx
-LC0xNDUwMjg1NDY3LDIyNzA0NDU0Nyw2NjE5MDgyNDAsMjA5MT
-AwMjk2OF19
+eyJoaXN0b3J5IjpbLTEyOTE4MzY2NzMsLTg4ODQ2MTI2MywxMT
+YxNjY0ODUzLDI5NTY0MDM5OSwxNjEwNTYxNzE5LC02NzMwMzAz
+OTEsLTE0NTAyODU0NjcsMjI3MDQ0NTQ3LDY2MTkwODI0MCwyMD
+kxMDAyOTY4XX0=
 -->
