@@ -124,9 +124,13 @@ typedef struct
 ```
 我们把这个结构体嵌套进数组里:
 ```
+const ChineseCell_T OLED_CF16X16[] = {
+"你"	,	0x00 , 0x00  ...三十二个
+
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDg4Nzg0MzQsMjk1NjQwMzk5LDE2MT
+eyJoaXN0b3J5IjpbLTE1MTAyMzQxMzAsMjk1NjQwMzk5LDE2MT
 A1NjE3MTksLTY3MzAzMDM5MSwtMTQ1MDI4NTQ2NywyMjcwNDQ1
 NDcsNjYxOTA4MjQwLDIwOTEwMDI5NjhdfQ==
 -->
