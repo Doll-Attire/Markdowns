@@ -153,7 +153,7 @@ if (pChinese >= 3)
 			 
 				if (strcmp(OLED_CF16X16[pIndex]->Index , "") == 0 )
 			{break;}
-////上面这里我们首先在字模结构体的最下方定义一个
+////上面这里我们首先在字模结构体的最下方定义一个""空字符作为没找到结果的默认返回值，然后
 
 		}
   }
@@ -161,8 +161,8 @@ if (pChinese >= 3)
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzUyNjQxMTksLTg4ODQ2MTI2MywxMT
-YxNjY0ODUzLDI5NTY0MDM5OSwxNjEwNTYxNzE5LC02NzMwMzAz
-OTEsLTE0NTAyODU0NjcsMjI3MDQ0NTQ3LDY2MTkwODI0MCwyMD
-kxMDAyOTY4XX0=
+eyJoaXN0b3J5IjpbLTcwNjA0OTY2MCwtODg4NDYxMjYzLDExNj
+E2NjQ4NTMsMjk1NjQwMzk5LDE2MTA1NjE3MTksLTY3MzAzMDM5
+MSwtMTQ1MDI4NTQ2NywyMjcwNDQ1NDcsNjYxOTA4MjQwLDIwOT
+EwMDI5NjhdfQ==
 -->
