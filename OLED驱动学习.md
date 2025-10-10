@@ -147,7 +147,7 @@ pChinese ++;
 	  { 
 		pChinese = 0;
 		
-		for (pIndex = 0; pIndex <4 ; p )
+		for (pIndex = 0; strcmp(OLED_CF16X16[pIndex]->Index , "") ; pIndex ++ )
 
 
 		}
@@ -160,7 +160,7 @@ pChinese ++;
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDM1MjgzMTIsLTg4ODQ2MTI2MywxMT
+eyJoaXN0b3J5IjpbLTE2NzIwMjY2MDcsLTg4ODQ2MTI2MywxMT
 YxNjY0ODUzLDI5NTY0MDM5OSwxNjEwNTYxNzE5LC02NzMwMzAz
 OTEsLTE0NTAyODU0NjcsMjI3MDQ0NTQ3LDY2MTkwODI0MCwyMD
 kxMDAyOTY4XX0=
