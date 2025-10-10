@@ -151,12 +151,12 @@ if (pChinese >= 3)
 			strcmp(OLED_CF16X16[pIndex]->Index , "") != 0 ;
 			 pIndex ++ )
 			 {
-				if (strcmp(OLED_CF16X16[pIndex]->Index , "") == 0 )
+				if (strcmp(OLED_CF16X16[pIndex]->Index , SigleChinese) == 0 )
 			{break;}
 			  }
 ////上面这里我们首先在字模结构体的最下方定义一个""空字符作为没找到结果的默认返回值，
 然后从输入数据的Chinese数组里面遍历至结束符，将其中的每一位都写入SigleChinese中,当每次pChinese写到3之后,说明一个汉字读取完了,将它重置为0
-然后
+然后进入我们的字库中,从第一个开始遍历,直到找到和SigleChinese一样的字库后,退出循环,jinr
 		
 OLED_ShowImage
 (
@@ -174,8 +174,8 @@ OLED_ShowImage
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTUzNTUzNTUsLTg4ODQ2MTI2MywxMT
-YxNjY0ODUzLDI5NTY0MDM5OSwxNjEwNTYxNzE5LC02NzMwMzAz
-OTEsLTE0NTAyODU0NjcsMjI3MDQ0NTQ3LDY2MTkwODI0MCwyMD
-kxMDAyOTY4XX0=
+eyJoaXN0b3J5IjpbMTIzNTk3NzYwNCwtODg4NDYxMjYzLDExNj
+E2NjQ4NTMsMjk1NjQwMzk5LDE2MTA1NjE3MTksLTY3MzAzMDM5
+MSwtMTQ1MDI4NTQ2NywyMjcwNDQ1NDcsNjYxOTA4MjQwLDIwOT
+EwMDI5NjhdfQ==
 -->
