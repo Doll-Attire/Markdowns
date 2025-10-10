@@ -143,11 +143,13 @@ for (uint8_t i = 0; Chinese[i]!= '\0' ; i++ )
 {
 SigleChinese[pChinese] = Chinese[i];
 pChinese ++;
- if (pChinese >= 3)
+if (pChinese >= 3)
 	  { 
 		pChinese = 0;
 		
-		for (pIndex = 0; strcmp(OLED_CF16X16[pIndex]->Index , "") ; pIndex ++ )
+		for (pIndex = 0; strcmp(OLED_CF16X16[pIndex]->Index , "") != 0 ; pIndex ++ )
+			if (strcmp(OLED_CF16X16[pIndex]->Index , "") == 0 )
+			{break;}
 
 
 		}
@@ -160,8 +162,8 @@ pChinese ++;
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzIwMjY2MDcsLTg4ODQ2MTI2MywxMT
-YxNjY0ODUzLDI5NTY0MDM5OSwxNjEwNTYxNzE5LC02NzMwMzAz
-OTEsLTE0NTAyODU0NjcsMjI3MDQ0NTQ3LDY2MTkwODI0MCwyMD
-kxMDAyOTY4XX0=
+eyJoaXN0b3J5IjpbLTM3OTMzMTk4LC04ODg0NjEyNjMsMTE2MT
+Y2NDg1MywyOTU2NDAzOTksMTYxMDU2MTcxOSwtNjczMDMwMzkx
+LC0xNDUwMjg1NDY3LDIyNzA0NDU0Nyw2NjE5MDgyNDAsMjA5MT
+AwMjk2OF19
 -->
