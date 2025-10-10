@@ -129,9 +129,18 @@ const ChineseCell_T OLED_CF16X16[] = {
 
 }
 ```
-这时可以编写汉字显示脚本了，思路是先chanf
+这时可以编写汉字显示脚本了，思路是先拆分字符串为独立的汉字，然后遍历汉字字模，匹配数据，最后显示出来。
+```
+void OLED_ShowChinese(uint8_t X , uint8_t Page , char *Chinese)
+{
+char SigleCh
+
+
+}
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzI5MTE2MDIsMTE2MTY2NDg1MywyOT
+eyJoaXN0b3J5IjpbLTE2NzIwMTEwMDksMTE2MTY2NDg1MywyOT
 U2NDAzOTksMTYxMDU2MTcxOSwtNjczMDMwMzkxLC0xNDUwMjg1
 NDY3LDIyNzA0NDU0Nyw2NjE5MDgyNDAsMjA5MTAwMjk2OF19
 -->
