@@ -112,9 +112,9 @@ uint8_t MyI2C_ReceiveByte(void)
 
 ## 汉字显示的实现
 
-我们使用ascii作为索引可以直接在一个数组里面实现
+我们使用ascii作为索引可以直接在一个数组里面实现英文和数字字模的存放，但是
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY5NDY2MzA4LDI5NTY0MDM5OSwxNjEwNT
-YxNzE5LC02NzMwMzAzOTEsLTE0NTAyODU0NjcsMjI3MDQ0NTQ3
-LDY2MTkwODI0MCwyMDkxMDAyOTY4XX0=
+eyJoaXN0b3J5IjpbLTExMDMzMjcyMDIsMjk1NjQwMzk5LDE2MT
+A1NjE3MTksLTY3MzAzMDM5MSwtMTQ1MDI4NTQ2NywyMjcwNDQ1
+NDcsNjYxOTA4MjQwLDIwOTEwMDI5NjhdfQ==
 -->
