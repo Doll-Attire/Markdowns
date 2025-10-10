@@ -112,7 +112,7 @@ uint8_t MyI2C_ReceiveByte(void)
 
 ## 汉字显示的实现
 
-我们使用ascii作为索引可以直接在一个数组里面实现英文和数字字模的存放，但是汉字不管是在GB规范还是UFT8格式下都需要不止一字节，因此考虑使用结构体来存放：
+这里基于已经实现了使用ascii作为索引可以直接在一个数组里面实现英文和数字字模的存放，参考源码这里略过。汉字不管是在GB规范还是UFT8格式下都需要不止一字节，因此考虑使用结构体来存放：
 ```
 typedef struct
 {
@@ -129,8 +129,9 @@ const ChineseCell_T OLED_CF16X16[] = {
 
 }
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTAyMzQxMzAsMjk1NjQwMzk5LDE2MT
-A1NjE3MTksLTY3MzAzMDM5MSwtMTQ1MDI4NTQ2NywyMjcwNDQ1
-NDcsNjYxOTA4MjQwLDIwOTEwMDI5NjhdfQ==
+eyJoaXN0b3J5IjpbMTE2MTY2NDg1MywyOTU2NDAzOTksMTYxMD
+U2MTcxOSwtNjczMDMwMzkxLC0xNDUwMjg1NDY3LDIyNzA0NDU0
+Nyw2NjE5MDgyNDAsMjA5MTAwMjk2OF19
 -->
