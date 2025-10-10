@@ -110,8 +110,10 @@ uint8_t MyI2C_ReceiveByte(void)
 
 这里需要涉及到软件I2C的驱动,参考[[10-3] 软件I2C读写MPU6050_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1th411z7sn?spm_id_from=333.788.videopod.episodes&vd_source=740e28c14abb598f1fe8be2d12484cbb&p=33)
 
+## 汉字显示的实现
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk1NjQwMzk5LDE2MTA1NjE3MTksLTY3Mz
-AzMDM5MSwtMTQ1MDI4NTQ2NywyMjcwNDQ1NDcsNjYxOTA4MjQw
-LDIwOTEwMDI5NjhdfQ==
+eyJoaXN0b3J5IjpbLTY0NTE5NTkwNSwyOTU2NDAzOTksMTYxMD
+U2MTcxOSwtNjczMDMwMzkxLC0xNDUwMjg1NDY3LDIyNzA0NDU0
+Nyw2NjE5MDgyNDAsMjA5MTAwMjk2OF19
 -->
