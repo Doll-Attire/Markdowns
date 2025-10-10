@@ -133,14 +133,16 @@ const ChineseCell_T OLED_CF16X16[] = {
 ```
 void OLED_ShowChinese(uint8_t X , uint8_t Page , char *Chinese)
 {
-char SigleCh
+char SigleChinese[4] = {0};		///读到的字,这里使用GB标准,两个字节十六进制一个汉字
+uint8_t pChanese = 0; ////取到第几个字了
+
 
 
 }
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzIwMTEwMDksMTE2MTY2NDg1MywyOT
-U2NDAzOTksMTYxMDU2MTcxOSwtNjczMDMwMzkxLC0xNDUwMjg1
-NDY3LDIyNzA0NDU0Nyw2NjE5MDgyNDAsMjA5MTAwMjk2OF19
+eyJoaXN0b3J5IjpbLTg4ODQ2MTI2MywxMTYxNjY0ODUzLDI5NT
+Y0MDM5OSwxNjEwNTYxNzE5LC02NzMwMzAzOTEsLTE0NTAyODU0
+NjcsMjI3MDQ0NTQ3LDY2MTkwODI0MCwyMDkxMDAyOTY4XX0=
 -->
