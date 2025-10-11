@@ -48,8 +48,9 @@ double	8
 
 ## 大小端
 
- 
+ 大小端字节序存储，大端时
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzg0Njc5NTgsMTQ3NjM1NDc3MCwtND
-A5Nzk4NTQsLTY5Nzc3MzgzMCwtMjEyMTM2Njg4NF19
+eyJoaXN0b3J5IjpbMTIxMTAxODI5OSwtMTU3ODQ2Nzk1OCwxND
+c2MzU0NzcwLC00MDk3OTg1NCwtNjk3NzczODMwLC0yMTIxMzY2
+ODg0XX0=
 -->
