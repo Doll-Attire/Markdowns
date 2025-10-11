@@ -48,7 +48,7 @@ double	8
 
 ## 大小端
 
- 大小端字节序存储，大端时高位字节排放在内存的低地址端，低位字节排放在内存的高地址端。小段反之，字面意思就是大端正着放，小端反着放。
+ 大小端字节序存储，大端时高位字节排放在内存的低地址端，低位字节排放在内存的高地址端。小段反之，字面意思就是大端正着放( 注意,11 22 33 44这个数据,44是其低位,对应大端则44放在低地址 )，小端反着放。
  这里补充C语言中内存空间布局：
  ```
 最高内存地址 0xFFFFFFFF
@@ -66,7 +66,7 @@ double	8
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTQxNDE1LDEyMTEwMTgyOTksLTE1Nz
-g0Njc5NTgsMTQ3NjM1NDc3MCwtNDA5Nzk4NTQsLTY5Nzc3Mzgz
-MCwtMjEyMTM2Njg4NF19
+eyJoaXN0b3J5IjpbLTIwNTk1MTQ0NjgsLTcxMTQxNDE1LDEyMT
+EwMTgyOTksLTE1Nzg0Njc5NTgsMTQ3NjM1NDc3MCwtNDA5Nzk4
+NTQsLTY5Nzc3MzgzMCwtMjEyMTM2Njg4NF19
 -->
