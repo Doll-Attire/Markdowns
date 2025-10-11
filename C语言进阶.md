@@ -48,9 +48,9 @@ double	8
 
 ## 大小端
 
- 大小端字节序存储，大端时
+ 大小端字节序存储，大端时高位字节排放在内存的低地址端，低位字节排放在内存的高地址端。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMTAxODI5OSwtMTU3ODQ2Nzk1OCwxND
-c2MzU0NzcwLC00MDk3OTg1NCwtNjk3NzczODMwLC0yMTIxMzY2
-ODg0XX0=
+eyJoaXN0b3J5IjpbODgwNTk2MzU3LDEyMTEwMTgyOTksLTE1Nz
+g0Njc5NTgsMTQ3NjM1NDc3MCwtNDA5Nzk4NTQsLTY5Nzc3Mzgz
+MCwtMjEyMTM2Njg4NF19
 -->
