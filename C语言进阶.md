@@ -71,17 +71,18 @@ int a = 1;
 
 ///因此,把a的地址转为char*,只取一个char大小,看看取出来的是00 还是 01
 if(  *(char*)&a == 1)
+///先qiangzhileixin
 {
 ...
 
 }
 
 ```
-
+ 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyOTU5MDE2MywtMjA1OTUxNDQ2OCwtNz
+eyJoaXN0b3J5IjpbLTIwNjkzNjkxOCwtMjA1OTUxNDQ2OCwtNz
 ExNDE0MTUsMTIxMTAxODI5OSwtMTU3ODQ2Nzk1OCwxNDc2MzU0
 NzcwLC00MDk3OTg1NCwtNjk3NzczODMwLC0yMTIxMzY2ODg0XX
 0=
