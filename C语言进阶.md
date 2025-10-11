@@ -43,7 +43,13 @@ double	8
 - 补码 : 反码+1
 
 为什么要用补码？--》可以把符号位和数字域统一处理，补码和源码的互相转化运算过程是相同的，不需要额外的硬件电路。 
+
+---
+
+## 大小端
+
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NjM1NDc3MCwtNDA5Nzk4NTQsLTY5Nz
-c3MzgzMCwtMjEyMTM2Njg4NF19
+eyJoaXN0b3J5IjpbLTE1Nzg0Njc5NTgsMTQ3NjM1NDc3MCwtND
+A5Nzk4NTQsLTY5Nzc3MzgzMCwtMjEyMTM2Njg4NF19
 -->
