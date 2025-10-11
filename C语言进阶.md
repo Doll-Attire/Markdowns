@@ -63,10 +63,16 @@ double	8
 
 最低内存地址 0x00000000
 ```
-zheshih
+这时候就有人想问了，该怎么判断使用的是哪种字节序呢？考虑这个代码
+```c
+int a = 1;
+///如果是大端 为01 00 00 00
+///如果s
+
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3OTcyODMyOSwtMjA1OTUxNDQ2OCwtNz
+eyJoaXN0b3J5IjpbMTkwOTYxMTE1OSwtMjA1OTUxNDQ2OCwtNz
 ExNDE0MTUsMTIxMTAxODI5OSwtMTU3ODQ2Nzk1OCwxNDc2MzU0
 NzcwLC00MDk3OTg1NCwtNjk3NzczODMwLC0yMTIxMzY2ODg0XX
 0=
