@@ -42,8 +42,8 @@ double	8
 - 反码 : 符号位不变 , 其他按位取反
 - 补码 : 反码+1
 
-为什么要用补码？--》可以把符号位和数字域统一处理，
+为什么要用补码？--》可以把符号位和数字域统一处理，补码和源码的互相转化运算过程是相同的，不需要额外的硬件电路。 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjU5NzQ4MiwtNDA5Nzk4NTQsLTY5Nz
+eyJoaXN0b3J5IjpbMTQ3NjM1NDc3MCwtNDA5Nzk4NTQsLTY5Nz
 c3MzgzMCwtMjEyMTM2Njg4NF19
 -->
