@@ -42,7 +42,8 @@ double	8
 - 反码 : 符号位不变 , 其他按位取反
 - 补码 : 反码+1
 
-
+为什么要用补码？--》可以把符号位和数字域统一处理
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5Nzc3MzgzMCwtMjEyMTM2Njg4NF19
+eyJoaXN0b3J5IjpbLTQwOTc5ODU0LC02OTc3NzM4MzAsLTIxMj
+EzNjY4ODRdfQ==
 -->
