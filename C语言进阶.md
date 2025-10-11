@@ -67,12 +67,21 @@ double	8
 ```c
 int a = 1;
 ///如果是大端 为01 00 00 00
-///如果s
+///如果是小端 为00 00 00 01
+
+///因此,把a的地址转为char*,只取一个char大小,看看取出来的是00 还是 01
+if(  *(char*)&a == 1)
+{
+...
+
+}
 
 ```
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwOTYxMTE1OSwtMjA1OTUxNDQ2OCwtNz
+eyJoaXN0b3J5IjpbMTYyOTU5MDE2MywtMjA1OTUxNDQ2OCwtNz
 ExNDE0MTUsMTIxMTAxODI5OSwtMTU3ODQ2Nzk1OCwxNDc2MzU0
 NzcwLC00MDk3OTg1NCwtNjk3NzczODMwLC0yMTIxMzY2ODg0XX
 0=
