@@ -92,17 +92,18 @@ printf("%u\n" , a);
 ///要输出为无符号整型,就需要对a整型提升,对于有符号的char a,高位全部补齐为1.
 ///最后得到的,111....10000000整体被当成一个无符号整形打印出来.
 但是注意!
-如果char a = 128,在截断后与-128没区别,都是
+如果char a = 128,在截断后与-128没区别,都是10000000
+因此->
 printf("%d\n",a);
 ///这里想用有符号整型打印,但是我们知道,系统中整型按照补码存储的,因此计算机进行如下解读:
 收到111...10000000,视为补码,减一再取反
-得到100...10000000,打印-128
+得到100...10000000,打印-128,完全大相径庭.
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4ODgyNzgwLC0xODk4NTY4OTE2LDE0Nz
-gwNjg4MDUsLTIwNTk1MTQ0NjgsLTcxMTQxNDE1LDEyMTEwMTgy
-OTksLTE1Nzg0Njc5NTgsMTQ3NjM1NDc3MCwtNDA5Nzk4NTQsLT
-Y5Nzc3MzgzMCwtMjEyMTM2Njg4NF19
+eyJoaXN0b3J5IjpbMTc4ODMzNTI5OCwtMTg5ODU2ODkxNiwxND
+c4MDY4ODA1LC0yMDU5NTE0NDY4LC03MTE0MTQxNSwxMjExMDE4
+Mjk5LC0xNTc4NDY3OTU4LDE0NzYzNTQ3NzAsLTQwOTc5ODU0LC
+02OTc3NzM4MzAsLTIxMjEzNjY4ODRdfQ==
 -->
