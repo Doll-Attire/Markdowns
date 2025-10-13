@@ -88,13 +88,15 @@ char a = -128
 ///这里先发生-128  -> 100...10000000的32位整型存储
 ///再除了符号位翻转再加一,得到1111...10000000的补码
 ///最后存放到char里面,只有八位,也即10000000存到a里面了
-printf()
+printf("%u\n" , a);
+///要输出为无符号整型,就需要对a整型提升,对于有符号的char a,高位全部补齐为1.
+///最后得到的,111....10000000整体被当成一个无符号
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyODAzODMwMiwxNDc4MDY4ODA1LC0yMD
-U5NTE0NDY4LC03MTE0MTQxNSwxMjExMDE4Mjk5LC0xNTc4NDY3
-OTU4LDE0NzYzNTQ3NzAsLTQwOTc5ODU0LC02OTc3NzM4MzAsLT
-IxMjEzNjY4ODRdfQ==
+eyJoaXN0b3J5IjpbNTAxNzA1MjA0LDE0NzgwNjg4MDUsLTIwNT
+k1MTQ0NjgsLTcxMTQxNDE1LDEyMTEwMTgyOTksLTE1Nzg0Njc5
+NTgsMTQ3NjM1NDc3MCwtNDA5Nzk4NTQsLTY5Nzc3MzgzMCwtMj
+EyMTM2Njg4NF19
 -->
