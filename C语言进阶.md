@@ -78,12 +78,15 @@ if(  *(char*)&a == 1)
 }
 
 ```
- 
+ ### 数据类型存储
+---
+我们知道，计算机在存储数据时往往采用补码的方式，而当发生类型转换时，又会进行整型对齐。
+比如
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3ODA2ODgwNSwtMjA1OTUxNDQ2OCwtNz
-ExNDE0MTUsMTIxMTAxODI5OSwtMTU3ODQ2Nzk1OCwxNDc2MzU0
-NzcwLC00MDk3OTg1NCwtNjk3NzczODMwLC0yMTIxMzY2ODg0XX
-0=
+eyJoaXN0b3J5IjpbMzQxMDM5MzY3LDE0NzgwNjg4MDUsLTIwNT
+k1MTQ0NjgsLTcxMTQxNDE1LDEyMTEwMTgyOTksLTE1Nzg0Njc5
+NTgsMTQ3NjM1NDc3MCwtNDA5Nzk4NTQsLTY5Nzc3MzgzMCwtMj
+EyMTM2Njg4NF19
 -->
