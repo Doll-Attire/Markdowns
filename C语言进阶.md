@@ -85,13 +85,15 @@ if(  *(char*)&a == 1)
 ```c
 char a = -128
 ///char并没有规定默认有无符号,但是常见编辑器都是默认有符号的
-///这里先发生-128  -> 100...10000000的32位整型存储,再chu
-
+///这里先发生-128  -> 100...10000000的32位整型存储
+///再除了符号位翻转再加一,得到1111...10000000的补码
+///最后存放到char里面,只有八位,也即10000000存到a里面了
+printf()
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNDEzNzI2NywxNDc4MDY4ODA1LC0yMD
+eyJoaXN0b3J5IjpbLTYyODAzODMwMiwxNDc4MDY4ODA1LC0yMD
 U5NTE0NDY4LC03MTE0MTQxNSwxMjExMDE4Mjk5LC0xNTc4NDY3
 OTU4LDE0NzYzNTQ3NzAsLTQwOTc5ODU0LC02OTc3NzM4MzAsLT
 IxMjEzNjY4ODRdfQ==
