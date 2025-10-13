@@ -81,12 +81,18 @@ if(  *(char*)&a == 1)
  ### 数据类型存储
 ---
 我们知道，计算机在存储数据时往往采用补码的方式，而当发生类型转换时，又会进行整型对齐。
-比如
+比如：
+```c
+char a = -128
+///char并没有规定默认有无符号,但是常见编辑器都是默认有符号的
+///这里先发生-128  -> 100...10000000的32位整型存储,再chu
+
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxMDM5MzY3LDE0NzgwNjg4MDUsLTIwNT
-k1MTQ0NjgsLTcxMTQxNDE1LDEyMTEwMTgyOTksLTE1Nzg0Njc5
-NTgsMTQ3NjM1NDc3MCwtNDA5Nzk4NTQsLTY5Nzc3MzgzMCwtMj
-EyMTM2Njg4NF19
+eyJoaXN0b3J5IjpbLTIyNDEzNzI2NywxNDc4MDY4ODA1LC0yMD
+U5NTE0NDY4LC03MTE0MTQxNSwxMjExMDE4Mjk5LC0xNTc4NDY3
+OTU4LDE0NzYzNTQ3NzAsLTQwOTc5ODU0LC02OTc3NzM4MzAsLT
+IxMjEzNjY4ODRdfQ==
 -->
