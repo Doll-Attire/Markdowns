@@ -91,12 +91,16 @@ char a = -128
 printf("%u\n" , a);
 ///要输出为无符号整型,就需要对a整型提升,对于有符号的char a,高位全部补齐为1.
 ///最后得到的,111....10000000整体被当成一个无符号整形打印出来.
+但是注意!
+printf("%d\n",a);
+///这里想用有符号整型打印,但是我们知道,系统中整型按照补码存储的,因此计算机进行如下解读:
+shoudao
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTg1Njg5MTYsMTQ3ODA2ODgwNSwtMj
-A1OTUxNDQ2OCwtNzExNDE0MTUsMTIxMTAxODI5OSwtMTU3ODQ2
-Nzk1OCwxNDc2MzU0NzcwLC00MDk3OTg1NCwtNjk3NzczODMwLC
-0yMTIxMzY2ODg0XX0=
+eyJoaXN0b3J5IjpbLTE2NDE2ODc4MTAsLTE4OTg1Njg5MTYsMT
+Q3ODA2ODgwNSwtMjA1OTUxNDQ2OCwtNzExNDE0MTUsMTIxMTAx
+ODI5OSwtMTU3ODQ2Nzk1OCwxNDc2MzU0NzcwLC00MDk3OTg1NC
+wtNjk3NzczODMwLC0yMTIxMzY2ODg0XX0=
 -->
