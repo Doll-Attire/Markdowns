@@ -113,7 +113,7 @@ printf("%d\n",a);
 转化为"科学计数法的浮点"  -- > (-1)^0 * 1.0011 * 2^3
 即 S = 0 	;	 M = 1.0011 	;		 E = 3;
 ```
-
+同时,这里我们就会发现一件事情,也就是为什么floatcunchu
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NDcxMTQ1OCwxNzg4MzM1Mjk4XX0=
+eyJoaXN0b3J5IjpbMTc4ODk2Njc5NSwxNzg4MzM1Mjk4XX0=
 -->
