@@ -125,9 +125,15 @@ printf("%d\n",a);
 这里有一些规范，首先知道M有效数字永远是1.xxxx，那么这个1一般可以忽略，直接存储小数部分。E规范为无符号整形，但是实际情况下会有问题。为什么？因为这是二进制，哪怕是0.5D  == 0.1B，最后得到一个1.0的 M 和-1的 E。
 
 这时候就有人说了，哎呀我敲，你都知道有负数了怎么还是无符号整型呢，因此规定存储E时需要进行*中间移位*，也即加上中间数，对于8bit（float）的指数位，我们加上127。对于32位的（double），我们加1023上去。
-
+那么我们回到最开始：
+```
+float f = 5.5 ;
+5.5D -> 101.1B
+(-1)^0  *  1.011  *  2^2
+s=0 ; m = 
+```
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NTMwMTU0NCwtNjU4ODcyNTgyLDE3OD
-gzMzUyOThdfQ==
+eyJoaXN0b3J5IjpbLTkxMzM2NTU2LC02NTg4NzI1ODIsMTc4OD
+MzNTI5OF19
 -->
