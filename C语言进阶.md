@@ -130,10 +130,14 @@ printf("%d\n",a);
 float f = 5.5 ;
 5.5D -> 101.1B
 (-1)^0  *  1.011  *  2^2
-s=0 ; m = 
+s=0 ; m=1.011 ; e = 2;
+2 + 127 = 129d = 1000 0001b
+存储为0 10000001 1011 0000000000000000000
+0100 0000 1101 10000000000000000000
+=0x
 ```
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMzM2NTU2LC02NTg4NzI1ODIsMTc4OD
-MzNTI5OF19
+eyJoaXN0b3J5IjpbLTkzMTY4MTI5NSwtNjU4ODcyNTgyLDE3OD
+gzMzUyOThdfQ==
 -->
