@@ -147,6 +147,5 @@ s=0 ; m=1.011 ; e = 2;
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU3NDUxNTE5LDEwMTM4NTQ4NDgsLTY1OD
-g3MjU4MiwxNzg4MzM1Mjk4XX0=
+eyJoaXN0b3J5IjpbNTU3NDUxNTE5XX0=
 -->
