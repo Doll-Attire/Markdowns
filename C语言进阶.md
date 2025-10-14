@@ -141,8 +141,12 @@ s=0 ; m=1.011 ; e = 2;
 
 
 ```
-  #### 如何取出cunfang
+---
+  ####  浮点数的取出过程
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc5MzQ2MTQ0LDEwMTM4NTQ4NDgsLTY1OD
+eyJoaXN0b3J5IjpbNTU3NDUxNTE5LDEwMTM4NTQ4NDgsLTY1OD
 g3MjU4MiwxNzg4MzM1Mjk4XX0=
 -->
