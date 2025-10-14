@@ -122,7 +122,8 @@ printf("%d\n",a);
 |1  | 8 |23 |
 
 单位是bit位。
+这里有一些规范，首先知道M有效数字永远是1.xxxx，那么这个1一般
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NTgwMDYyOCwxNzg4MzM1Mjk4XX0=
+eyJoaXN0b3J5IjpbLTM3NzMzNTU0LDE3ODgzMzUyOThdfQ==
 -->
