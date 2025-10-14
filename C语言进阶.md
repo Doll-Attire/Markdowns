@@ -122,8 +122,8 @@ printf("%d\n",a);
 |1  | 8 |23 |
 
 单位是bit位。
-这里有一些规范，首先知道M有效数字永远是1.xxxx，那么这个1一般
+这里有一些规范，首先知道M有效数字永远是1.xxxx，那么这个1一般可以忽略，直接存储小数部分。为什么？因为这是二进制，哪怕是0.5D
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NzMzNTU0LDE3ODgzMzUyOThdfQ==
+eyJoaXN0b3J5IjpbNzcxMzgwNjYzLDE3ODgzMzUyOThdfQ==
 -->
