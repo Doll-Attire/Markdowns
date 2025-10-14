@@ -104,9 +104,10 @@ printf("%d\n",a);
 当我们尝试将int类型和float类型的数据和指针互相套用时,会出现答非所问的结果,这暗示着C语言对于二者有着截然不同的储存规则。
 
 ```
-根据国际规范，一个erjinzhi
+根据国际规范，一个二进制浮点数V可以表示为：
+（-1）* M * 2%
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NjU3NTQxNiwxNzg4MzM1Mjk4XX0=
+eyJoaXN0b3J5IjpbLTY2MzM0NjUyMiwxNzg4MzM1Mjk4XX0=
 -->
