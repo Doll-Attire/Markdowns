@@ -103,6 +103,10 @@ printf("%d\n",a);
 ### 浮点储存
 当我们尝试将int类型和float类型的数据和指针互相套用时,会出现答非所问的结果,这暗示着C语言对于二者有着截然不同的储存规则。
 
+```
+根据国际规范，一个erjinzhi
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTIzNDgyNTcsMTc4ODMzNTI5OF19
+eyJoaXN0b3J5IjpbLTk1NjU3NTQxNiwxNzg4MzM1Mjk4XX0=
 -->
