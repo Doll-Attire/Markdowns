@@ -122,8 +122,8 @@ printf("%d\n",a);
 |1  | 8 |23 |
 
 单位是bit位。
-这里有一些规范，首先知道M有效数字永远是1.xxxx，那么这个1一般可以忽略，直接存储小数部分。为什么？因为这是二进制，哪怕是0.5D
+这里有一些规范，首先知道M有效数字永远是1.xxxx，那么这个1一般可以忽略，直接存储小数部分。E规范为无符号整形，但是实际情况下会有问题。为什么？因为这是二进制，哪怕是0.5D  == 0.1B，最后得到一个1.0的 M 和-1的 E ，
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcxMzgwNjYzLDE3ODgzMzUyOThdfQ==
+eyJoaXN0b3J5IjpbLTIyNjU5Njg5NywxNzg4MzM1Mjk4XX0=
 -->
