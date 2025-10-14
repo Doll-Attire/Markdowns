@@ -105,9 +105,10 @@ printf("%d\n",a);
 
 ```
 根据国际规范，一个二进制浮点数V可以表示为：
-（-1）* M * 2%
+（-1）^S * M * 2^E
+其中S的1或0反应正负，M表示有效数字，大于一小于二。2的E次方则是指数位。
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MzM0NjUyMiwxNzg4MzM1Mjk4XX0=
+eyJoaXN0b3J5IjpbMTMwOTkzMTA1OSwxNzg4MzM1Mjk4XX0=
 -->
