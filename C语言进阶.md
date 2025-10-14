@@ -111,8 +111,9 @@ printf("%d\n",a);
 举个例子，有V = 5.0f
 二进制为---> 101.0
 转化为"科学计数法的浮点"  -- > (-1)^0 * 1.01 * 2^2
+即 S = 0 	;	 M = 1.01 	;		 E = 2;
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxODYxODMyLDE3ODgzMzUyOThdfQ==
+eyJoaXN0b3J5IjpbLTU4NDk5MDc3NiwxNzg4MzM1Mjk4XX0=
 -->
