@@ -106,13 +106,13 @@ printf("%d\n",a);
 ```
 根据国际规范，一个二进制浮点数V可以表示为：
 （-1）^S * M * 2^E
-其中S的1或0反应正负，M表示有效数字，大于一小于二。2的E次方则是指数位(因为是二进制,底数是二)。
+其中S的1或0反应正负，M表示有效数字，大于一小于二。2的E次方则是指数位(因为是二进制,底数是二才对嘛)。
 
 举个例子，有V = 5.0f
 二进制为---> 101.0
-
+转化为"科学计数法的浮点"  -- > (-1)^0 * 1.01 * 2^2
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA0MzM2MTYsMTc4ODMzNTI5OF19
+eyJoaXN0b3J5IjpbMTkxODYxODMyLDE3ODgzMzUyOThdfQ==
 -->
