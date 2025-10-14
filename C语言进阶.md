@@ -100,7 +100,9 @@ printf("%d\n",a);
 得到100...10000000,打印-128,完全大相径庭.
 ```
 
+### 浮点储存
+当我们尝试将int类型和float类型的数据和指针互相套用时,会出现答非所问的结果,这暗示着C语言对于二者有着截然不同的储存规则。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4ODMzNTI5OF19
+eyJoaXN0b3J5IjpbLTIwMTIzNDgyNTcsMTc4ODMzNTI5OF19
 -->
