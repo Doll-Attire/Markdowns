@@ -136,9 +136,10 @@ s=0 ; m=1.011 ; e = 2;
 0100 0000 1101 1000 0000000000000000
 0x 40b0 0000
 
+
 ```
   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMzg1NDg0OCwtNjU4ODcyNTgyLDE3OD
-gzMzUyOThdfQ==
+eyJoaXN0b3J5IjpbLTEwNTA5MzgwOTQsMTAxMzg1NDg0OCwtNj
+U4ODcyNTgyLDE3ODgzMzUyOThdfQ==
 -->
