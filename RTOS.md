@@ -22,9 +22,11 @@ osThreadNew()
   - 内存没有计算功能，只能被读写内存
   - 所有计算在CPU中执行
   - 使用RISC指令集，CPU复杂度小，易于设计。
+  ```
   
+ ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjcyMDQzMCwtMTQzMzgzMjk2NCwtMT
-czNDc5NjE0NiwtNzgxNzAwNjIzLC0xNzY4ODI3NzA2LC0xNDE4
-NTY1NDg5LC05MTYxMzc1Nl19
+eyJoaXN0b3J5IjpbLTExMjgyOTIzNTQsLTE0MzM4MzI5NjQsLT
+E3MzQ3OTYxNDYsLTc4MTcwMDYyMywtMTc2ODgyNzcwNiwtMTQx
+ODU2NTQ4OSwtOTE2MTM3NTZdfQ==
 -->
