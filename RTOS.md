@@ -17,8 +17,8 @@ osThreadNew()
 ```
 
 ### ARM架构
-  jinjian
+  属于精简指令集，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNjA2MTU4MSwtMTc2ODgyNzcwNiwtMT
+eyJoaXN0b3J5IjpbLTc4MTcwMDYyMywtMTc2ODgyNzcwNiwtMT
 QxODU2NTQ4OSwtOTE2MTM3NTZdfQ==
 -->
