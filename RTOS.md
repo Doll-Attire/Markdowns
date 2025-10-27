@@ -3,7 +3,15 @@
 
 在多任务系统中，根据程序的功能，把这个程序主体分割成一个个独立的，无限循环且不能返回的子程序，称之为任务。每个任务都是独立的，互不干扰的，且具备自身的优先级，它由操作系统调度管理。加入操作系统后，开发人员不需要关注每个功能模块之间的冲突，重心放在子程序的实现。缺点是整个系统随之带来的额外RAM开销
 
+### CMSIS
+一个统一的接口层，可以使用其API统一调用FreeRTOS、RT_Thread等不同操作系统的实现统一功能的不同函数。
+```c
+///free
+
+
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNjEzNzU2XX0=
+eyJoaXN0b3J5IjpbMTU2MjI1MjI2NiwtOTE2MTM3NTZdfQ==
 -->
