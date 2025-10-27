@@ -17,8 +17,8 @@ osThreadNew()
 ```
 
 ### ARM架构
-  
+  jinjian
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njg4Mjc3MDYsLTE0MTg1NjU0ODksLT
-kxNjEzNzU2XX0=
+eyJoaXN0b3J5IjpbLTkwNjA2MTU4MSwtMTc2ODgyNzcwNiwtMT
+QxODU2NTQ4OSwtOTE2MTM3NTZdfQ==
 -->
