@@ -18,9 +18,13 @@ osThreadNew()
 ```
 
 ### ARM架构
-  属于精简指令集，=SOC(片上系统)自带CPU与内存，flash。后者保存程序，cpu运行，运行的过程中用到内存。内存没有计算功能，只能读写内存，所有计算在CPU中zhixing
+  属于精简指令集，SOC( 片上系统 )自带CPU与内存、flash。后者保存程序，cpu运行，运行的过程中用到内存。ARM芯片有以下特点：
+  - 内存没有计算功能，只能被读写内存
+  - 所有计算在CPU中执行
+  - 使用RISC指令集，CPU复杂度小，易于设计。
+  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTE3NTQzMCwtMTQzMzgzMjk2NCwtMT
+eyJoaXN0b3J5IjpbLTIwNjcyMDQzMCwtMTQzMzgzMjk2NCwtMT
 czNDc5NjE0NiwtNzgxNzAwNjIzLC0xNzY4ODI3NzA2LC0xNDE4
 NTY1NDg5LC05MTYxMzc1Nl19
 -->
