@@ -7,11 +7,16 @@
 一个统一的接口层，可以使用其API统一调用FreeRTOS、RT_Thread等不同操作系统的实现统一功能的不同函数。
 ```c
 ///free
+xTaskCreat()
+///RT
+rt_thread_creat()
 
+///CMSIS统一调用
+osThreadNew()
 
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MjI1MjI2NiwtOTE2MTM3NTZdfQ==
+eyJoaXN0b3J5IjpbLTE0MTg1NjU0ODksLTkxNjEzNzU2XX0=
 -->
