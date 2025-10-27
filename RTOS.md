@@ -14,11 +14,13 @@ rt_thread_creat()
 ///CMSIS统一调用
 osThreadNew()
 
+
 ```
 
 ### ARM架构
   属于精简指令集，= 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzQ3OTYxNDYsLTc4MTcwMDYyMywtMT
-c2ODgyNzcwNiwtMTQxODU2NTQ4OSwtOTE2MTM3NTZdfQ==
+eyJoaXN0b3J5IjpbLTE0MzM4MzI5NjQsLTE3MzQ3OTYxNDYsLT
+c4MTcwMDYyMywtMTc2ODgyNzcwNiwtMTQxODU2NTQ4OSwtOTE2
+MTM3NTZdfQ==
 -->
