@@ -26,7 +26,5 @@ osThreadNew()
   
  ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjgyOTIzNTQsLTE0MzM4MzI5NjQsLT
-E3MzQ3OTYxNDYsLTc4MTcwMDYyMywtMTc2ODgyNzcwNiwtMTQx
-ODU2NTQ4OSwtOTE2MTM3NTZdfQ==
+eyJoaXN0b3J5IjpbLTExMjgyOTIzNTRdfQ==
 -->
