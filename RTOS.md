@@ -17,8 +17,8 @@ osThreadNew()
 ```
 
 ### ARM架构
-  属于精简指令集，
+  属于精简指令集，= 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MTcwMDYyMywtMTc2ODgyNzcwNiwtMT
-QxODU2NTQ4OSwtOTE2MTM3NTZdfQ==
+eyJoaXN0b3J5IjpbLTE3MzQ3OTYxNDYsLTc4MTcwMDYyMywtMT
+c2ODgyNzcwNiwtMTQxODU2NTQ4OSwtOTE2MTM3NTZdfQ==
 -->
