@@ -25,10 +25,10 @@ osThreadNew()
   ```
  例如,执行一个A+B
  首先,cpu从内存中读取a,b
- 然后cpu从flash中读取汇编代码，内部计算单元计算a+b
+ 然后cpu从flash中读取机器码，内部计算单元计算a+b
  最后得到的结果写回内存中
  ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE3MTc0MzQ5LC0xMzE2NjkyMDc4LC0xMT
-I4MjkyMzU0XX0=
+eyJoaXN0b3J5IjpbMzIxMTg5MDYzLDMxNzE3NDM0OSwtMTMxNj
+Y5MjA3OCwtMTEyODI5MjM1NF19
 -->
