@@ -28,7 +28,12 @@ osThreadNew()
  然后cpu从flash中读取机器码，内部计算单元计算a+b
  最后得到的结果写回内存中
  ```
+### 堆
+定义：一块空闲的内存，例如c：
+```
+void* my_
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIxMTg5MDYzLDMxNzE3NDM0OSwtMTMxNj
-Y5MjA3OCwtMTEyODI5MjM1NF19
+eyJoaXN0b3J5IjpbMTk4OTMzMjQ0NCwzMjExODkwNjMsMzE3MT
+c0MzQ5LC0xMzE2NjkyMDc4LC0xMTI4MjkyMzU0XX0=
 -->
