@@ -23,11 +23,9 @@ osThreadNew()
   - 所有计算在CPU中执行
   - 使用RISC指令集，CPU复杂度小，易于设计。
   ```
-  
+ 
  ```
-
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjMwMDk4MzAsLTExMjgyOTIzNTRdfQ
+eyJoaXN0b3J5IjpbLTEzMTY2OTIwNzgsLTExMjgyOTIzNTRdfQ
 ==
 -->
