@@ -29,7 +29,7 @@ osThreadNew()
  最后得到的结果写回内存中
  ```
 ### 堆
-定义：一块空闲的内存，例如c：
+定义：一块空闲的内存，可以co例如c：
 ```
 char heap_buf[ 1024 ] ;
 int pos =0 ;
@@ -63,8 +63,8 @@ for (i = 0; i<26 ; i++)
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NjI4MDA3MywyMTEyMjkyMTAsLTE0Nj
-MwMDk0MDAsLTI1ODk2MDIyOCwxOTg5MzMyNDQ0LDMyMTE4OTA2
-MywzMTcxNzQzNDksLTEzMTY2OTIwNzgsLTExMjgyOTIzNTRdfQ
-==
+eyJoaXN0b3J5IjpbLTE0MjMwMjUyNzMsMTE4NjI4MDA3MywyMT
+EyMjkyMTAsLTE0NjMwMDk0MDAsLTI1ODk2MDIyOCwxOTg5MzMy
+NDQ0LDMyMTE4OTA2MywzMTcxNzQzNDksLTEzMTY2OTIwNzgsLT
+ExMjgyOTIzNTRdfQ==
 -->
