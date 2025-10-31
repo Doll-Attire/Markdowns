@@ -29,7 +29,7 @@ osThreadNew()
  最后得到的结果写回内存中
  ```
 ### 堆
-定义：一块空闲的内存，可以co例如c：
+定义：一块空闲的内存，可以从中分配处一个小buffer,用完后再放回去。例如c：
 ```
 char heap_buf[ 1024 ] ;
 int pos =0 ;
@@ -61,9 +61,11 @@ for (i = 0; i<26 ; i++)
 
 }
 ```
+### 栈
+也是内存空间，CPU的SO寄存器指向他，可以用于函数调用、局部变量、多任务系统保存现场。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjMwMjUyNzMsMTE4NjI4MDA3MywyMT
+eyJoaXN0b3J5IjpbLTE0NTkyNjEyNDAsMTE4NjI4MDA3MywyMT
 EyMjkyMTAsLTE0NjMwMDk0MDAsLTI1ODk2MDIyOCwxOTg5MzMy
 NDQ0LDMyMTE4OTA2MywzMTcxNzQzNDksLTEzMTY2OTIwNzgsLT
 ExMjgyOTIzNTRdfQ==
