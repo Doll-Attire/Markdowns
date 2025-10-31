@@ -31,9 +31,16 @@ osThreadNew()
 ### 堆
 定义：一块空闲的内存，例如c：
 ```
-void* my_
+void* my_malloc( int size )
+{
+	int old_pos = pos ;
+	pos += size ;
+	return &heap_buf[pos];
+
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4OTMzMjQ0NCwzMjExODkwNjMsMzE3MT
-c0MzQ5LC0xMzE2NjkyMDc4LC0xMTI4MjkyMzU0XX0=
+eyJoaXN0b3J5IjpbLTE4ODMwODUxNDMsMTk4OTMzMjQ0NCwzMj
+ExODkwNjMsMzE3MTc0MzQ5LC0xMzE2NjkyMDc4LC0xMTI4Mjky
+MzU0XX0=
 -->
