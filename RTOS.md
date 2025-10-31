@@ -67,11 +67,11 @@ C语言中的函数调用使用汇编BL指令，主要完成两个任务：
 >将下一个地址放入LR寄存器
 >将目标函数的地址放入PC寄存器
 
-因为函数之间的嵌套调用会导致LR被覆盖，所以函数入口一般默认用PUSH指令保存LR与。
+因为函数之间的嵌套调用会导致LR被覆盖，所以函数入口一般默认用PUSH指令保存LR与必要的寄存器。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYzNTI2NTk1LDMyMzU2NjI5NSwtMTQ1OT
-I2MTI0MCwxMTg2MjgwMDczLDIxMTIyOTIxMCwtMTQ2MzAwOTQw
-MCwtMjU4OTYwMjI4LDE5ODkzMzI0NDQsMzIxMTg5MDYzLDMxNz
-E3NDM0OSwtMTMxNjY5MjA3OCwtMTEyODI5MjM1NF19
+eyJoaXN0b3J5IjpbLTE0Mzc5MzQwMzMsMzIzNTY2Mjk1LC0xND
+U5MjYxMjQwLDExODYyODAwNzMsMjExMjI5MjEwLC0xNDYzMDA5
+NDAwLC0yNTg5NjAyMjgsMTk4OTMzMjQ0NCwzMjExODkwNjMsMz
+E3MTc0MzQ5LC0xMzE2NjkyMDc4LC0xMTI4MjkyMzU0XX0=
 -->
