@@ -64,15 +64,16 @@ for (i = 0; i<26 ; i++)
 ### 栈
 也是内存空间，CPU的SO寄存器指向他，可以用于函数调用、局部变量、多任务系统保存现场。
 C语言中的函数调用使用汇编BL指令，主要完成两个任务：
->将下一个地址放入LR寄存器
->将目标函数的地址放入PC寄存器
+>将下一个指令的地址放入LR寄存器 --回哪里
+>将目标函数的地址放入PC寄存器 --去哪里
 
 因为函数之间的嵌套调用会导致LR被覆盖，所以函数入口一般默认用PUSH指令保存LR与必要的寄存器（保存在内存栈区，专门一块A函数的栈 ），被执行完后，栈被回收，sp指针回到之前的位置。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjQ4MTYxNDIsOTMwNzY3NzAsNDI0MT
-c0ODEyLC0xNDM3OTM0MDMzLDMyMzU2NjI5NSwtMTQ1OTI2MTI0
-MCwxMTg2MjgwMDczLDIxMTIyOTIxMCwtMTQ2MzAwOTQwMCwtMj
-U4OTYwMjI4LDE5ODkzMzI0NDQsMzIxMTg5MDYzLDMxNzE3NDM0
-OSwtMTMxNjY5MjA3OCwtMTEyODI5MjM1NF19
+eyJoaXN0b3J5IjpbLTE1NjMyNzk2ODYsLTE4MjQ4MTYxNDIsOT
+MwNzY3NzAsNDI0MTc0ODEyLC0xNDM3OTM0MDMzLDMyMzU2NjI5
+NSwtMTQ1OTI2MTI0MCwxMTg2MjgwMDczLDIxMTIyOTIxMCwtMT
+Q2MzAwOTQwMCwtMjU4OTYwMjI4LDE5ODkzMzI0NDQsMzIxMTg5
+MDYzLDMxNzE3NDM0OSwtMTMxNjY5MjA3OCwtMTEyODI5MjM1NF
+19
 -->
