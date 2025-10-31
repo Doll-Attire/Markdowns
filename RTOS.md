@@ -44,7 +44,7 @@ void* my_malloc( int size )
 
 void my_free( void *buf)
 {
-//实现释放堆中内存
+//实现释放堆中内存,这个d
 }
 
 int main(void)
@@ -63,7 +63,7 @@ for (i = 0; i<26 ; i++)
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMjI5MjEwLC0xNDYzMDA5NDAwLC0yNT
-g5NjAyMjgsMTk4OTMzMjQ0NCwzMjExODkwNjMsMzE3MTc0MzQ5
-LC0xMzE2NjkyMDc4LC0xMTI4MjkyMzU0XX0=
+eyJoaXN0b3J5IjpbOTQyODQ4NDQ5LDIxMTIyOTIxMCwtMTQ2Mz
+AwOTQwMCwtMjU4OTYwMjI4LDE5ODkzMzI0NDQsMzIxMTg5MDYz
+LDMxNzE3NDM0OSwtMTMxNjY5MjA3OCwtMTEyODI5MjM1NF19
 -->
