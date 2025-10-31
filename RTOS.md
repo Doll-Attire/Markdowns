@@ -53,6 +53,7 @@ char ch = 65 ;//'A'
 int i ;
 char *buf = my_malloc(100);
 unsigned cahr uch = 200 ;
+
 for (i = 0; i<26 ; i++)
 	{
 	buf[i] = 'A' + i ;
@@ -62,7 +63,7 @@ for (i = 0; i<26 ; i++)
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjMwMDk0MDAsLTI1ODk2MDIyOCwxOT
-g5MzMyNDQ0LDMyMTE4OTA2MywzMTcxNzQzNDksLTEzMTY2OTIw
-NzgsLTExMjgyOTIzNTRdfQ==
+eyJoaXN0b3J5IjpbMjExMjI5MjEwLC0xNDYzMDA5NDAwLC0yNT
+g5NjAyMjgsMTk4OTMzMjQ0NCwzMjExODkwNjMsMzE3MTc0MzQ5
+LC0xMzE2NjkyMDc4LC0xMTI4MjkyMzU0XX0=
 -->
