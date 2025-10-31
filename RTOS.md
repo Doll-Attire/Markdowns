@@ -41,10 +41,24 @@ void* my_malloc( int size )
 	return &heap_buf[pos] ;
 
 }
+
+void my_free( void *buf)
+{
+//实现释放堆中内存
+}
+
+int main(void)
+{
+char ch = 65 ;//'A'
+int i ;
+char *buf = my_malloc(100);
+unsigned cahr uch = 200 ;
+
+}
 ```
-h
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1ODk2MDIyOCwxOTg5MzMyNDQ0LDMyMT
-E4OTA2MywzMTcxNzQzNDksLTEzMTY2OTIwNzgsLTExMjgyOTIz
-NTRdfQ==
+eyJoaXN0b3J5IjpbMjg5NTg1NzY5LC0yNTg5NjAyMjgsMTk4OT
+MzMjQ0NCwzMjExODkwNjMsMzE3MTc0MzQ5LC0xMzE2NjkyMDc4
+LC0xMTI4MjkyMzU0XX0=
 -->
