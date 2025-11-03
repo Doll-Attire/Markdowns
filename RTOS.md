@@ -28,8 +28,12 @@ osThreadNew()
  然后cpu从flash中读取机器码，内部计算单元计算a+b
  最后得到的结果写回内存中
  ```
-### 堆
+### 堆Heap
 定义：一块空闲的内存，可以从中分配处一个小buffer,用完后再放回去。例如c：
+
+
+-   malloc：从堆里划出一块空间给程序使用
+-   free：用完后，再把它标记为"空闲"的，可以再次使用
 ```
 char heap_buf[ 1024 ] ;
 int pos =0 ;
@@ -61,7 +65,7 @@ for (i = 0; i<26 ; i++)
 
 }
 ```
-### 栈
+### 栈Stack
 也是内存空间，CPU的SO寄存器指向他，可以用于函数调用、局部变量、多任务系统保存现场。
 C语言中的函数调用使用汇编BL指令，主要完成两个任务：
 >将下一个指令的地址放入LR寄存器 --回哪里
@@ -69,11 +73,13 @@ C语言中的函数调用使用汇编BL指令，主要完成两个任务：
 
 因为函数之间的嵌套调用会导致LR被覆盖，所以函数入口一般默认用PUSH指令保存LR与必要的寄存器（保存在内存栈区，专门一块A函数的栈 ），被执行完后，栈被回收，sp指针回到之前的位置。
  
+### 内存管理
+FreeRTOS中内存管理的接口函数为：pvPortMalloc 、vPortFree，对应于C库的malloc、free。 文件在FreeRTOS/Source/portable/MemMang下，它也是放在portable目录下，表示你可以提供自己的函数，ongyo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMTkxMjg5MCwtMTU2MzI3OTY4NiwtMT
-gyNDgxNjE0Miw5MzA3Njc3MCw0MjQxNzQ4MTIsLTE0Mzc5MzQw
-MzMsMzIzNTY2Mjk1LC0xNDU5MjYxMjQwLDExODYyODAwNzMsMj
-ExMjI5MjEwLC0xNDYzMDA5NDAwLC0yNTg5NjAyMjgsMTk4OTMz
-MjQ0NCwzMjExODkwNjMsMzE3MTc0MzQ5LC0xMzE2NjkyMDc4LC
-0xMTI4MjkyMzU0XX0=
+eyJoaXN0b3J5IjpbMTYyMjUxOTI3LDEyMTE5MTI4OTAsLTE1Nj
+MyNzk2ODYsLTE4MjQ4MTYxNDIsOTMwNzY3NzAsNDI0MTc0ODEy
+LC0xNDM3OTM0MDMzLDMyMzU2NjI5NSwtMTQ1OTI2MTI0MCwxMT
+g2MjgwMDczLDIxMTIyOTIxMCwtMTQ2MzAwOTQwMCwtMjU4OTYw
+MjI4LDE5ODkzMzI0NDQsMzIxMTg5MDYzLDMxNzE3NDM0OSwtMT
+MxNjY5MjA3OCwtMTEyODI5MjM1NF19
 -->
