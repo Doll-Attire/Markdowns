@@ -76,12 +76,15 @@ C语言中的函数调用使用汇编BL指令，主要完成两个任务：
 ### 内存管理
 FreeRTOS中内存管理的接口函数为：pvPortMalloc 、vPortFree，对应于C库的malloc、free。 文件在FreeRTOS/Source/portable/MemMang下，它也是放在portable目录下，表示你可以提供自己的函数，有五种，参考[第8章 内存管理 | 百问网](https://rtos.100ask.net/zh/FreeRTOS/DShanMCU-F103/chapter8.html#_8-2-freertos%E7%9A%845%E4%B8%AD%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%96%B9%E6%B3%95)
 
-
+### 任务
+核心要素：
+- 要做什么 - 函数
+- 栈
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgzMzI4MTM4LDEyMTE5MTI4OTAsLTE1Nj
-MyNzk2ODYsLTE4MjQ4MTYxNDIsOTMwNzY3NzAsNDI0MTc0ODEy
-LC0xNDM3OTM0MDMzLDMyMzU2NjI5NSwtMTQ1OTI2MTI0MCwxMT
-g2MjgwMDczLDIxMTIyOTIxMCwtMTQ2MzAwOTQwMCwtMjU4OTYw
-MjI4LDE5ODkzMzI0NDQsMzIxMTg5MDYzLDMxNzE3NDM0OSwtMT
-MxNjY5MjA3OCwtMTEyODI5MjM1NF19
+eyJoaXN0b3J5IjpbLTgyNjAwMDU2NCw2ODMzMjgxMzgsMTIxMT
+kxMjg5MCwtMTU2MzI3OTY4NiwtMTgyNDgxNjE0Miw5MzA3Njc3
+MCw0MjQxNzQ4MTIsLTE0Mzc5MzQwMzMsMzIzNTY2Mjk1LC0xND
+U5MjYxMjQwLDExODYyODAwNzMsMjExMjI5MjEwLC0xNDYzMDA5
+NDAwLC0yNTg5NjAyMjgsMTk4OTMzMjQ0NCwzMjExODkwNjMsMz
+E3MTc0MzQ5LC0xMzE2NjkyMDc4LC0xMTI4MjkyMzU0XX0=
 -->
