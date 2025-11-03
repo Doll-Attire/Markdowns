@@ -84,14 +84,31 @@ FreeRTOS中内存管理的接口函数为：pvPortMalloc 、vPortFree，对应�
 
 在FreeRTOS中，任务就是一个函数，原型如下：
 ```c
-void ATaskFunction( void *pvParameters );
+void ATaskFunction( void *pvParameters )
+{
+	/* 对于不同的任务，局部变量放在任务的栈里，有各自的副本 */
+	int32_t lVariableExample = 0;
+	
+    /* 任务函数通常实现为一个无限循环 */
+	for( ;; )
+	{
+		/* 任务的代码 */
+	}
+
+    /* 如果程序从循环中退出，一定要使用vTaskDelete删除自己
+     * NULL表示删除的是自己
+     */
+	vTaskDelete( NULL );
+    
+    /* 程序不会执行到这里, 如果执行到这里就出错了 */
+}
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg1NDg2NjAsLTE0NTY3MDAyNjYsNjgzMz
-I4MTM4LDEyMTE5MTI4OTAsLTE1NjMyNzk2ODYsLTE4MjQ4MTYx
-NDIsOTMwNzY3NzAsNDI0MTc0ODEyLC0xNDM3OTM0MDMzLDMyMz
-U2NjI5NSwtMTQ1OTI2MTI0MCwxMTg2MjgwMDczLDIxMTIyOTIx
-MCwtMTQ2MzAwOTQwMCwtMjU4OTYwMjI4LDE5ODkzMzI0NDQsMz
-IxMTg5MDYzLDMxNzE3NDM0OSwtMTMxNjY5MjA3OCwtMTEyODI5
-MjM1NF19
+eyJoaXN0b3J5IjpbMTg2NzM1NDM0MSw0ODU0ODY2MCwtMTQ1Nj
+cwMDI2Niw2ODMzMjgxMzgsMTIxMTkxMjg5MCwtMTU2MzI3OTY4
+NiwtMTgyNDgxNjE0Miw5MzA3Njc3MCw0MjQxNzQ4MTIsLTE0Mz
+c5MzQwMzMsMzIzNTY2Mjk1LC0xNDU5MjYxMjQwLDExODYyODAw
+NzMsMjExMjI5MjEwLC0xNDYzMDA5NDAwLC0yNTg5NjAyMjgsMT
+k4OTMzMjQ0NCwzMjExODkwNjMsMzE3MTc0MzQ5LC0xMzE2Njky
+MDc4XX0=
 -->
