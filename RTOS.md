@@ -74,9 +74,11 @@ C语言中的函数调用使用汇编BL指令，主要完成两个任务：
 因为函数之间的嵌套调用会导致LR被覆盖，所以函数入口一般默认用PUSH指令保存LR与必要的寄存器（保存在内存栈区，专门一块A函数的栈 ），被执行完后，栈被回收，sp指针回到之前的位置。
  
 ### 内存管理
-FreeRTOS中内存管理的接口函数为：pvPortMalloc 、vPortFree，对应于C库的malloc、free。 文件在FreeRTOS/Source/portable/MemMang下，它也是放在portable目录下，表示你可以提供自己的函数，ongyo
+FreeRTOS中内存管理的接口函数为：pvPortMalloc 、vPortFree，对应于C库的malloc、free。 文件在FreeRTOS/Source/portable/MemMang下，它也是放在portable目录下，表示你可以提供自己的函数，有五种，参考[第8章 内存管理 | 百问网](https://rtos.100ask.net/zh/FreeRTOS/DShanMCU-F103/chapter8.html#_8-2-freertos%E7%9A%845%E4%B8%AD%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86%E6%96%B9%E6%B3%95)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMjUxOTI3LDEyMTE5MTI4OTAsLTE1Nj
+eyJoaXN0b3J5IjpbNjgzMzI4MTM4LDEyMTE5MTI4OTAsLTE1Nj
 MyNzk2ODYsLTE4MjQ4MTYxNDIsOTMwNzY3NzAsNDI0MTc0ODEy
 LC0xNDM3OTM0MDMzLDMyMzU2NjI5NSwtMTQ1OTI2MTI0MCwxMT
 g2MjgwMDczLDIxMTIyOTIxMCwtMTQ2MzAwOTQwMCwtMjU4OTYw
