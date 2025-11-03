@@ -66,9 +66,9 @@ for (i = 0; i<26 ; i++)
 }
 ```
 ### 栈Stack
-也是内存空间，CPU的SO寄存器指向他，可以用于函数调用、局部变量、多任务系统保存现场。
+也是内存空间，CPU的SP寄存器指向他，可以用于函数调用、局部变量、多任务系统保存现场。
 C语言中的函数调用使用汇编BL指令，主要完成两个任务：
->将下一个指令的地址放入LR寄存器 --回哪里
+>将下一个指令的地址（返回地址）放入LR寄存器 --回哪里
 >将目标函数的地址放入PC寄存器 --去哪里
 
 因为函数之间的嵌套调用会导致LR被覆盖，所以函数入口一般默认用PUSH指令保存LR与必要的寄存器（保存在内存栈区，专门一块A函数的栈 ），被执行完后，栈被回收，sp指针回到之前的位置。
@@ -106,11 +106,11 @@ void ATaskFunction( void *pvParameters )
 我们使用链表来管理任务，对于每个任务，都有TCB（TaskControlBlock）结构体，
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzgyMjcxMjAsNTg2NDY2MzIzLDE4Nj
-czNTQzNDEsNDg1NDg2NjAsLTE0NTY3MDAyNjYsNjgzMzI4MTM4
-LDEyMTE5MTI4OTAsLTE1NjMyNzk2ODYsLTE4MjQ4MTYxNDIsOT
-MwNzY3NzAsNDI0MTc0ODEyLC0xNDM3OTM0MDMzLDMyMzU2NjI5
-NSwtMTQ1OTI2MTI0MCwxMTg2MjgwMDczLDIxMTIyOTIxMCwtMT
-Q2MzAwOTQwMCwtMjU4OTYwMjI4LDE5ODkzMzI0NDQsMzIxMTg5
-MDYzXX0=
+eyJoaXN0b3J5IjpbLTE0MTEzNjI2NDgsLTE0NzgyMjcxMjAsNT
+g2NDY2MzIzLDE4NjczNTQzNDEsNDg1NDg2NjAsLTE0NTY3MDAy
+NjYsNjgzMzI4MTM4LDEyMTE5MTI4OTAsLTE1NjMyNzk2ODYsLT
+E4MjQ4MTYxNDIsOTMwNzY3NzAsNDI0MTc0ODEyLC0xNDM3OTM0
+MDMzLDMyMzU2NjI5NSwtMTQ1OTI2MTI0MCwxMTg2MjgwMDczLD
+IxMTIyOTIxMCwtMTQ2MzAwOTQwMCwtMjU4OTYwMjI4LDE5ODkz
+MzI0NDRdfQ==
 -->
