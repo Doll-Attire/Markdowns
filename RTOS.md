@@ -103,9 +103,10 @@ void ATaskFunction( void *pvParameters )
     /* 程序不会执行到这里, 如果执行到这里就出错了 */
 }
 ```
-## 标题
+我们使用链表来管理任务，对于每个任务，都有TCB结构体（）
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNDUwNDk3Niw1ODY0NjYzMjMsMTg2Nz
+eyJoaXN0b3J5IjpbLTczNzA2MTk0NSw1ODY0NjYzMjMsMTg2Nz
 M1NDM0MSw0ODU0ODY2MCwtMTQ1NjcwMDI2Niw2ODMzMjgxMzgs
 MTIxMTkxMjg5MCwtMTU2MzI3OTY4NiwtMTgyNDgxNjE0Miw5Mz
 A3Njc3MCw0MjQxNzQ4MTIsLTE0Mzc5MzQwMzMsMzIzNTY2Mjk1
