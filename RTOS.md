@@ -120,14 +120,15 @@ PC寄存器存放着Flash中存储的"要执行的下一条指令"的地址，�
 本质上是时间片的放弃和获得。
  
 ##### 任务优先级
-字面意思。需要注意的是当高优先级任务进入运行态后，会有恶劣影响，哪怕它执行完了进入就绪态，也会立刻获得时间片从而导致低优先级的进入“任务饥饿”，因此设计任务时jiu
+字面意思。需要注意的是当高优先级任务进入运行态后，会有恶劣影响，哪怕它执行完了进入就绪态，也会立刻获得时间片从而导致低优先级的进入“任务饥饿”
+**因此设计任务时就要考虑让其通过延时或者等待数据等方法离开运行和就绪态。**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MjcyNTg2LC0xMDUzMTc1ODE1LC04OT
-Y3MDg4MjIsLTEyMTY1MzU4NTcsLTExNjcwOTk3NTYsOTU3MDU0
-MjA3LDE2MjYzNzM3NzIsLTE0NzgyMjcxMjAsNTg2NDY2MzIzLD
-E4NjczNTQzNDEsNDg1NDg2NjAsLTE0NTY3MDAyNjYsNjgzMzI4
-MTM4LDEyMTE5MTI4OTAsLTE1NjMyNzk2ODYsLTE4MjQ4MTYxND
-IsOTMwNzY3NzAsNDI0MTc0ODEyLC0xNDM3OTM0MDMzLDMyMzU2
-NjI5NV19
+eyJoaXN0b3J5IjpbLTIzNjkxNjAyMSwtMTA1MzE3NTgxNSwtOD
+k2NzA4ODIyLC0xMjE2NTM1ODU3LC0xMTY3MDk5NzU2LDk1NzA1
+NDIwNywxNjI2MzczNzcyLC0xNDc4MjI3MTIwLDU4NjQ2NjMyMy
+wxODY3MzU0MzQxLDQ4NTQ4NjYwLC0xNDU2NzAwMjY2LDY4MzMy
+ODEzOCwxMjExOTEyODkwLC0xNTYzMjc5Njg2LC0xODI0ODE2MT
+QyLDkzMDc2NzcwLDQyNDE3NDgxMiwtMTQzNzkzNDAzMywzMjM1
+NjYyOTVdfQ==
 -->
