@@ -114,18 +114,18 @@ PC寄存器存放着Flash中存储的"要执行的下一条指令"的地址，�
 
 ##### 任务状态
 分为
-| 就绪态 |运行态  |阻塞态|挂起态
+| 就绪态 | 运行态  |阻塞态|挂起态
 |--|--|--|--|
 | rt,创建任务后也会自动进入 | 如题 |延时等待|等待数据或状态|
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NjcwODgyMiwtMTIxNjUzNTg1NywtMT
-E2NzA5OTc1Niw5NTcwNTQyMDcsMTYyNjM3Mzc3MiwtMTQ3ODIy
-NzEyMCw1ODY0NjYzMjMsMTg2NzM1NDM0MSw0ODU0ODY2MCwtMT
-Q1NjcwMDI2Niw2ODMzMjgxMzgsMTIxMTkxMjg5MCwtMTU2MzI3
-OTY4NiwtMTgyNDgxNjE0Miw5MzA3Njc3MCw0MjQxNzQ4MTIsLT
-E0Mzc5MzQwMzMsMzIzNTY2Mjk1LC0xNDU5MjYxMjQwLDExODYy
-ODAwNzNdfQ==
+eyJoaXN0b3J5IjpbMTI1Mjc2OTczMCwtODk2NzA4ODIyLC0xMj
+E2NTM1ODU3LC0xMTY3MDk5NzU2LDk1NzA1NDIwNywxNjI2Mzcz
+NzcyLC0xNDc4MjI3MTIwLDU4NjQ2NjMyMywxODY3MzU0MzQxLD
+Q4NTQ4NjYwLC0xNDU2NzAwMjY2LDY4MzMyODEzOCwxMjExOTEy
+ODkwLC0xNTYzMjc5Njg2LC0xODI0ODE2MTQyLDkzMDc2NzcwLD
+QyNDE3NDgxMiwtMTQzNzkzNDAzMywzMjM1NjYyOTUsLTE0NTky
+NjEyNDBdfQ==
 -->
