@@ -110,14 +110,16 @@ void ATaskFunction( void *pvParameters )
 ### 任务切换 --[【FreeRTOS】动画搞懂任务切换到底是怎么回事！_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1ErWyziEtw?spm_id_from=333.788.player.switch&vd_source=740e28c14abb598f1fe8be2d12484cbb)
 PC寄存器存放着Flash中存储的"要执行的下一条指令"的地址，我们进行多任务的原理就是依靠修改寄存器所实现的FreeRTOS的时间片机制。
 创建任务时，就是对每个任务创建任务栈，其功能之一就是存放“时间片”耗尽切换任务时寄存器的值。
+但这时会发现，时间片机制很可能会被延时等因素影响从而导致浪费CPU，应该怎么解决？
 
-### 
+##### 任务状态
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU3MDU0MjA3LDE2MjYzNzM3NzIsLTE0Nz
-gyMjcxMjAsNTg2NDY2MzIzLDE4NjczNTQzNDEsNDg1NDg2NjAs
-LTE0NTY3MDAyNjYsNjgzMzI4MTM4LDEyMTE5MTI4OTAsLTE1Nj
-MyNzk2ODYsLTE4MjQ4MTYxNDIsOTMwNzY3NzAsNDI0MTc0ODEy
-LC0xNDM3OTM0MDMzLDMyMzU2NjI5NSwtMTQ1OTI2MTI0MCwxMT
-g2MjgwMDczLDIxMTIyOTIxMCwtMTQ2MzAwOTQwMCwtMjU4OTYw
-MjI4XX0=
+eyJoaXN0b3J5IjpbLTExNjcwOTk3NTYsOTU3MDU0MjA3LDE2Mj
+YzNzM3NzIsLTE0NzgyMjcxMjAsNTg2NDY2MzIzLDE4NjczNTQz
+NDEsNDg1NDg2NjAsLTE0NTY3MDAyNjYsNjgzMzI4MTM4LDEyMT
+E5MTI4OTAsLTE1NjMyNzk2ODYsLTE4MjQ4MTYxNDIsOTMwNzY3
+NzAsNDI0MTc0ODEyLC0xNDM3OTM0MDMzLDMyMzU2NjI5NSwtMT
+Q1OTI2MTI0MCwxMTg2MjgwMDczLDIxMTIyOTIxMCwtMTQ2MzAw
+OTQwMF19
 -->
