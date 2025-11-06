@@ -108,13 +108,13 @@ void ATaskFunction( void *pvParameters )
 [基于STM32F407ZGT6的硬件平台，（可选CubeMX） + PlatformIO软件开发的FreeRTOS部署指南_platformio freertos-CSDN博客](https://blog.csdn.net/charlie114514191/article/details/146242902?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522ce4833ffb60ffe1381485e7524d1cfe2%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=ce4833ffb60ffe1381485e7524d1cfe2&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-146242902-null-null.142^v102^pc_search_result_base6&utm_term=platformio%20freertos&spm=1018.2226.3001.4187)
  
 ### 任务切换
-PC寄存器存放着Flash中存储的"要执行的下一条指令"的地址，我们进行duo
+PC寄存器存放着Flash中存储的"要执行的下一条指令"的地址，我们进行多任务的原理就是依靠修改寄存器所实现的FreeRTOS的时间片机制。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcyNTU5Mjg0LDE2MjYzNzM3NzIsLTE0Nz
-gyMjcxMjAsNTg2NDY2MzIzLDE4NjczNTQzNDEsNDg1NDg2NjAs
-LTE0NTY3MDAyNjYsNjgzMzI4MTM4LDEyMTE5MTI4OTAsLTE1Nj
-MyNzk2ODYsLTE4MjQ4MTYxNDIsOTMwNzY3NzAsNDI0MTc0ODEy
-LC0xNDM3OTM0MDMzLDMyMzU2NjI5NSwtMTQ1OTI2MTI0MCwxMT
-g2MjgwMDczLDIxMTIyOTIxMCwtMTQ2MzAwOTQwMCwtMjU4OTYw
-MjI4XX0=
+eyJoaXN0b3J5IjpbLTE0MzQ2Mzg1OTAsMTYyNjM3Mzc3MiwtMT
+Q3ODIyNzEyMCw1ODY0NjYzMjMsMTg2NzM1NDM0MSw0ODU0ODY2
+MCwtMTQ1NjcwMDI2Niw2ODMzMjgxMzgsMTIxMTkxMjg5MCwtMT
+U2MzI3OTY4NiwtMTgyNDgxNjE0Miw5MzA3Njc3MCw0MjQxNzQ4
+MTIsLTE0Mzc5MzQwMzMsMzIzNTY2Mjk1LC0xNDU5MjYxMjQwLD
+ExODYyODAwNzMsMjExMjI5MjEwLC0xNDYzMDA5NDAwLC0yNTg5
+NjAyMjhdfQ==
 -->
