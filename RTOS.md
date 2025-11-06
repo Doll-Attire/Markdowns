@@ -104,13 +104,15 @@ void ATaskFunction( void *pvParameters )
 }
 ```
 我们使用链表来管理任务，对于每个任务，都有TCB（TaskControlBlock）结构体，
+
+[基于STM32F407ZGT6的硬件平台，（可选CubeMX） + PlatformIO软件开发的FreeRTOS部署指南_platformio freertos-CSDN博客](https://blog.csdn.net/charlie114514191/article/details/146242902?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522ce4833ffb60ffe1381485e7524d1cfe2%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=ce4833ffb60ffe1381485e7524d1cfe2&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-146242902-null-null.142^v102^pc_search_result_base6&utm_term=platformio%20freertos&spm=1018.2226.3001.4187)
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNjM3Mzc3MiwtMTQ3ODIyNzEyMCw1OD
-Y0NjYzMjMsMTg2NzM1NDM0MSw0ODU0ODY2MCwtMTQ1NjcwMDI2
-Niw2ODMzMjgxMzgsMTIxMTkxMjg5MCwtMTU2MzI3OTY4NiwtMT
-gyNDgxNjE0Miw5MzA3Njc3MCw0MjQxNzQ4MTIsLTE0Mzc5MzQw
-MzMsMzIzNTY2Mjk1LC0xNDU5MjYxMjQwLDExODYyODAwNzMsMj
-ExMjI5MjEwLC0xNDYzMDA5NDAwLC0yNTg5NjAyMjgsMTk4OTMz
-MjQ0NF19
+eyJoaXN0b3J5IjpbLTcxNjUyMTczOSwxNjI2MzczNzcyLC0xND
+c4MjI3MTIwLDU4NjQ2NjMyMywxODY3MzU0MzQxLDQ4NTQ4NjYw
+LC0xNDU2NzAwMjY2LDY4MzMyODEzOCwxMjExOTEyODkwLC0xNT
+YzMjc5Njg2LC0xODI0ODE2MTQyLDkzMDc2NzcwLDQyNDE3NDgx
+MiwtMTQzNzkzNDAzMywzMjM1NjYyOTUsLTE0NTkyNjEyNDAsMT
+E4NjI4MDA3MywyMTEyMjkyMTAsLTE0NjMwMDk0MDAsLTI1ODk2
+MDIyOF19
 -->
