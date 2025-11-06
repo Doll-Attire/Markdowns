@@ -107,12 +107,13 @@ void ATaskFunction( void *pvParameters )
 
 [基于STM32F407ZGT6的硬件平台，（可选CubeMX） + PlatformIO软件开发的FreeRTOS部署指南_platformio freertos-CSDN博客](https://blog.csdn.net/charlie114514191/article/details/146242902?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522ce4833ffb60ffe1381485e7524d1cfe2%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=ce4833ffb60ffe1381485e7524d1cfe2&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-146242902-null-null.142^v102^pc_search_result_base6&utm_term=platformio%20freertos&spm=1018.2226.3001.4187)
  
+### 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNjUyMTczOSwxNjI2MzczNzcyLC0xND
-c4MjI3MTIwLDU4NjQ2NjMyMywxODY3MzU0MzQxLDQ4NTQ4NjYw
-LC0xNDU2NzAwMjY2LDY4MzMyODEzOCwxMjExOTEyODkwLC0xNT
-YzMjc5Njg2LC0xODI0ODE2MTQyLDkzMDc2NzcwLDQyNDE3NDgx
-MiwtMTQzNzkzNDAzMywzMjM1NjYyOTUsLTE0NTkyNjEyNDAsMT
-E4NjI4MDA3MywyMTEyMjkyMTAsLTE0NjMwMDk0MDAsLTI1ODk2
-MDIyOF19
+eyJoaXN0b3J5IjpbNjA4NDA1MTkwLDE2MjYzNzM3NzIsLTE0Nz
+gyMjcxMjAsNTg2NDY2MzIzLDE4NjczNTQzNDEsNDg1NDg2NjAs
+LTE0NTY3MDAyNjYsNjgzMzI4MTM4LDEyMTE5MTI4OTAsLTE1Nj
+MyNzk2ODYsLTE4MjQ4MTYxNDIsOTMwNzY3NzAsNDI0MTc0ODEy
+LC0xNDM3OTM0MDMzLDMyMzU2NjI5NSwtMTQ1OTI2MTI0MCwxMT
+g2MjgwMDczLDIxMTIyOTIxMCwtMTQ2MzAwOTQwMCwtMjU4OTYw
+MjI4XX0=
 -->
