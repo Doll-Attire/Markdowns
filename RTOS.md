@@ -119,13 +119,15 @@ PC寄存器存放着Flash中存储的"要执行的下一条指令"的地址，�
 | rt,创建任务后也会自动进入 | 如题 |延时等待|等待数据或状态|
 本质上是时间片的放弃和获得。
  
+##### 任务优先级
+字面意思。需要注意的是当高优先级任务进入运行态后，会有恶劣影响，哪怕它执行完了进入就绪态，也会立刻获得时间片从而导致低优先级的进入“任务饥饿”，因此设计任务时jiu
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTMxNzU4MTUsLTg5NjcwODgyMiwtMT
-IxNjUzNTg1NywtMTE2NzA5OTc1Niw5NTcwNTQyMDcsMTYyNjM3
-Mzc3MiwtMTQ3ODIyNzEyMCw1ODY0NjYzMjMsMTg2NzM1NDM0MS
-w0ODU0ODY2MCwtMTQ1NjcwMDI2Niw2ODMzMjgxMzgsMTIxMTkx
-Mjg5MCwtMTU2MzI3OTY4NiwtMTgyNDgxNjE0Miw5MzA3Njc3MC
-w0MjQxNzQ4MTIsLTE0Mzc5MzQwMzMsMzIzNTY2Mjk1LC0xNDU5
-MjYxMjQwXX0=
+eyJoaXN0b3J5IjpbMTQ0MjcyNTg2LC0xMDUzMTc1ODE1LC04OT
+Y3MDg4MjIsLTEyMTY1MzU4NTcsLTExNjcwOTk3NTYsOTU3MDU0
+MjA3LDE2MjYzNzM3NzIsLTE0NzgyMjcxMjAsNTg2NDY2MzIzLD
+E4NjczNTQzNDEsNDg1NDg2NjAsLTE0NTY3MDAyNjYsNjgzMzI4
+MTM4LDEyMTE5MTI4OTAsLTE1NjMyNzk2ODYsLTE4MjQ4MTYxND
+IsOTMwNzY3NzAsNDI0MTc0ODEyLC0xNDM3OTM0MDMzLDMyMzU2
+NjI5NV19
 -->
